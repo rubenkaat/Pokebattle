@@ -5,7 +5,7 @@ class Pokemon {
     public $energytype ='';
     public $health =0;
     public $attacks =[];
-    public $weakness = [];
+    public $weakness =[];
     public $resistance =[];
 
 
@@ -30,8 +30,4 @@ public function __construct($name, $energytype, $hitpoints, $attacks, $weakness,
         }
         $enemy->health-=$damage;
     }
- public function __toString() {
-      	return json_encode($this);
-    }
-
 }
